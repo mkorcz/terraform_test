@@ -1,11 +1,11 @@
-/*resource "aws_cloudwatch_log_group" "test-logs" {
-  name = "test-logs"
+resource "aws_cloudwatch_log_group" "httpd-app" {
+  name = "httpd-app"
 }
 
-resource "aws_cloudwatch_log_stream" "test-log-stream" {
-  log_group_name = aws_cloudwatch_log_group.test-logs.name
-  name = "test-log-stream"
+resource "aws_cloudwatch_log_stream" "httpd-app-stream" {
+  log_group_name = aws_cloudwatch_log_group.httpd-app.name
+  name = "stream/httpd"
 }
 
-*/
-#terraform import aws_cloudwatch_log_group.test_group test-logs - niby importuje cl
+
+#terraform import aws_cloudwatch_log_group.test_group test-logs

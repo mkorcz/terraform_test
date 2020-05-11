@@ -8,15 +8,16 @@
     "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/httpd-app",
+          "awslogs-group": "httpd-app",
           "awslogs-region": "${aws_region}",
-          "awslogs-stream-prefix": "ecs"
+          "awslogs-stream-prefix": "stream"
         }
     },
     "portMappings": [
       {
         "containerPort": ${app_port},
-        "hostPort": ${app_port}
+        "hostPort": ${app_port},
+        "protocol": "tcp"
       }
     ]
   }
