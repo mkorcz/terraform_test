@@ -75,7 +75,7 @@ data "template_file" "httpd_app" {
   template = file("./templates/ecs/httpd.json.tpl")
 
   vars = {
-    app_image      = docker_image.httpd.name
+    app_image      = var.docker_image_url
     app_port       = var.app_port
     cpu-value      = var.cpu-value
     memory-value   = var.memory-value

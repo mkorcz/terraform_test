@@ -6,7 +6,6 @@ variable "aws_region" {
 variable "vpc_cidr" {
   default = "10.0.0.0/16"
   description = "vpc ip adress"
-
 }
 
 variable "az_count" {
@@ -46,14 +45,13 @@ variable "ecs_task_execution_role_name" {
   default = "ECS_EXECUTION_ROLE"
 }
 
-variable "app_image" {
+variable "docker_image_url" {
   description = "Docker image"
-  default     = "bradfordhamilton/crystal_blockchain:latest"
 }
 
 variable "app_port" {
   description = "Port exposed by the docker image to redirect traffic to"
-  default     = 8080
+  default     = 80
 }
 variable "health_check_path" {
   default = "/"
