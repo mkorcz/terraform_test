@@ -1,0 +1,20 @@
+{
+    "logStreams": [
+        {
+            "logStreamName": "stream/httpd",
+            "creationTime": 1589317211424,
+            "arn": "arn:aws:logs:eu-north-1:875836252453:log-group:httpd-app:log-stream:stream/httpd",
+            "storedBytes": 0
+        },
+        {
+            "logStreamName": "stream/httpd/060261dc-674e-4916-afcb-313906981b89",
+            "creationTime": 1589317416303,
+            "firstEventTimestamp": 1589317416641,
+            "lastEventTimestamp": 1589317416645,
+            "lastIngestionTime": 1589317886414,
+            "uploadSequenceToken": "49604450888179149219234153314471205963145820882893547666",
+            "arn": "arn:aws:logs:eu-north-1:875836252453:log-group:httpd-app:log-stream:stream/httpd/060261dc-674e-4916-afcb-313906981b89",
+            "storedBytes": 0
+        }
+    ]
+}
