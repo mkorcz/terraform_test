@@ -1,4 +1,3 @@
-import sys
 import json
 
 file = open("logs.json")
